@@ -55,7 +55,7 @@ def _extract_tags(html):
         if html[i] == '<':
             left = i
         if html[i] == '>':
-            word = html[left:i+1]
+            word = html[left:i + 1]
             if ' ' in word:
                 space_index = word.index(' ')
                 stack.append(f'{html[left:left+space_index]}>')
